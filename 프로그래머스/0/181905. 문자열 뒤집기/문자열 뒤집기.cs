@@ -6,12 +6,11 @@ public class Solution {
         string left = my_string.Substring(0, s);
         string mid = my_string.Substring(s, e - s + 1);
         string right = my_string.Substring(e + 1);
-
+        
         char[] arr = mid.ToCharArray();
         Array.Reverse(arr);
-        string reversedMid = new string(arr);
+        string reverseMid = new string(arr);
         
-        return left + reversedMid + right;
-        
+        return left + reverseMid + right;
     }
 }
